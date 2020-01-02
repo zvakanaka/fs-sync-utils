@@ -1,0 +1,34 @@
+{
+  "name": "fs-sync-utils",
+  "version": "1.0.0",
+  "description": "Basic file system tools with easy to remember names",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest && echo \"View Report here: $(pwd)/coverage/lcov-report/index.html\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zvakanaka/fs-sync-utils.git"
+  },
+  "keywords": [
+    "file",
+    "system",
+    "fs",
+    "read",
+    "write",
+    "delete",
+    "exists"
+  ],
+  "author": "Adam Quinton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zvakanaka/fs-sync-utils/issues"
+  },
+  "homepage": "https://github.com/zvakanaka/fs-sync-utils#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
