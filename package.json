@@ -1,6 +1,6 @@
 {
   "name": "fs-sync-utils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Basic file system tools with easy to remember names",
   "main": "index.js",
   "directories": {
@@ -14,13 +14,13 @@
     "url": "git+https://github.com/zvakanaka/fs-sync-utils.git"
   },
   "keywords": [
-    "file",
-    "system",
     "fs",
     "read",
     "write",
     "delete",
-    "exists"
+    "exists",
+    "mkdir",
+    "rmdir"
   ],
   "author": "Adam Quinton",
   "license": "MIT",
@@ -29,6 +29,6 @@
   },
   "homepage": "https://github.com/zvakanaka/fs-sync-utils#readme",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^25.1.0"
   }
 }
