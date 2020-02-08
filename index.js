@@ -5,7 +5,15 @@ module.exports = {
   read,
   write,
   delete: remove,
-  remove
+  remove,
+  rm: remove,
+  mkdir,
+  makeDir: mkdir,
+  makeDirectory: mkdir,
+  removeDir: removeDirectory,
+  removeDirectory,
+  rmdir: removeDirectory,
+  rmDir: removeDirectory
 };
 
 function exists(path) {
@@ -38,5 +46,21 @@ function remove(fileName) {
    fs.unlinkSync(fileName);
   } catch (e) {
    throw new Error(e);
+  }
+}
+
+function mkdir(dirPath) {
+  try {
+    fs.mkdirSync(dirPath, { recursive: true });
+  } catch (e) {
+    throw new Error(e);
+  }
+}
+
+function removeDirectory(dirName) {
+  try {
+    fs.rmdirSync(dirName, { recursive: true });
+  } catch (e) {
+    throw new Error(e);
   }
 }
