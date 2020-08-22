@@ -22,6 +22,9 @@ test('To remove a file', () => {
 });
 
 test('To write a file', () => {
+  write(TEST_FILE_NAME, '');
+  expect(read(TEST_FILE_NAME)).toBe('');
+  
   write(TEST_FILE_NAME, TEST_FILE_CONTENTS);
   expect(read(TEST_FILE_NAME)).toBe(TEST_FILE_CONTENTS);
 });

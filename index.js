@@ -30,7 +30,7 @@ function read(fileName) {
 }
 
 function write(fileName, content) {
-  if (!fileName || !content) {
+  if (!fileName || typeof content !== 'string') {
     throw new Error('Both file name and content must be provided in order to write to file');
   }
 
