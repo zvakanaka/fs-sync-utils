@@ -29,6 +29,6 @@
   },
   "homepage": "https://github.com/zvakanaka/fs-sync-utils#readme",
   "devDependencies": {
-    "jest": "^25.1.0"
+    "jest": "^26.4.2"
   }
 }
